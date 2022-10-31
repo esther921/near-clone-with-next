@@ -76,7 +76,7 @@ export default function Home() {
               text="Open NEAR wallet"
             />
             <p className="flex flex-col items-center lg:items-start lg:pl-44 lg:pr-8 lg:order-first lg:pt-20 lg:text-lg">
-              <span className=" hidden lg:inline text-4xl text-zinc-700 font-medium lg:pb-3 lg:">
+              <span className=" hidden lg:inline text-4xl text-zinc-700 font-medium lg:pb-3">
                 Open NEAR wallet
               </span>
               <p className="text-center mx-8 lg:ml-0 lg:text-start">
@@ -93,9 +93,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="space-y-8 pb-16">
+        <div className="space-y-8 pb-16 lg:grid-cols-2">
           <Image_fixer src="/Images/archary.svg" text="Complete the course" />
           <div className="flex flex-col items-center gap-6">
+            <p className=" hidden lg:inline text-4xl text-zinc-700 font-medium lg:pb-3">Complete the course</p>
             <p>In three simple modules, learn:</p>
             <p>
               <Logo_fixer
@@ -118,7 +119,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-center gap-1.5">
-          <p className="text-2xl text-zinc-900 font-medium">
+          <p className="text-2xl text-zinc-700 font-medium lg:text-5xl">
             Claim NEAR certificate
           </p>
           <p className="flex flex-col items-center">
@@ -161,6 +162,8 @@ export default function Home() {
       {/* logo_links and footer */}
 
       <div className="flex flex-col items-center pt-28 space-y-8 text-secondary pb-12 w-full">
+        {/* links_logos */}
+        
         <div className="w-full flex justify-between px-8">
           <Link href="">
             <img src="/Images/twitter.svg" />
@@ -185,7 +188,7 @@ export default function Home() {
             <img src="/Images/unknown-link.svg" />
           </Link>
         </div>
-        <div className="text-lg flex flex-col items-center">
+        <div className="text-lg flex flex-col items-center lg:flex-row ">
           <Link href="">NEAR Balkans 2022</Link>
           <Link href="">info@nearbalkans.org</Link>
           <Link href="">Privacy policy</Link>
