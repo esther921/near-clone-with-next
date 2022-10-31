@@ -9,14 +9,15 @@ export default function Home() {
       {/* nav up to the Logo_fixer use */}
       <div className="text-secondary relative w-full">
         {/* nav */}
-        <div className=" container flex justify-between p-4 bg-white fixed w-full">
+        <div className=" container flex justify-between px-4 py-5 bg-white fixed w-full z-100">
           <div className="lg:flex">
             <picture className="flex gap-1 divide-x-2 divide-zinc-200 pt-1">
-              <img
+              <Link href={"/dacade"}><img
                 src="/Images/rounded-black-logo.svg"
                 className=" w-10 p-1"
                 alt="logo"
-              />
+              /></Link>
+              
 
               <p className="pt-1 lg:hidden">
                 <img className="pl-2 h-8" src="/Images/visual-logo.svg" />
@@ -29,15 +30,15 @@ export default function Home() {
 
           <div className="lg:flex lg:gap-20">
             <p className="hidden lg:inline">Start the Course</p>
-            <button className="rounded-3xl text-lg bg-zinc-700 text-white pb-3 pt-2 px-6 lg:font-medium">
+            <button className="rounded-3xl text-lg bg-zinc-700 text-white pb-2 pt-1 px-6 lg:font-medium">
               Create wallet
             </button>
           </div>
         </div>
 
         <div className="lg:hidden">
-        <Bg />
-      </div>
+          <Bg />
+        </div>
 
         <div className="pt-20">
           <div className="pt-36 flex flex-col items-center w-full">
@@ -84,7 +85,10 @@ export default function Home() {
                 joining the NEAR community as well as starting this course
               </p>
 
-              <Link className="flex w-full justify-center lg:justify-start lg:mt-8" href="">
+              <Link
+                className="flex w-full justify-center lg:justify-start lg:mt-8"
+                href=""
+              >
                 <button className="rounded-3xl mt-7 border border-zinc-900 py-2 px-8 mb-12 lg:text-zinc-900 lg:mt-0">
                   Create wallet
                 </button>
@@ -93,10 +97,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="space-y-8 pb-16 lg:grid-cols-2">
+        <div className="space-y-8 pb-16 lg:grid lg:grid-cols-2 lg:mt-32">
           <Image_fixer src="/Images/archary.svg" text="Complete the course" />
           <div className="flex flex-col items-center gap-6">
-            <p className=" hidden lg:inline text-4xl text-zinc-700 font-medium lg:pb-3">Complete the course</p>
+            <p className=" hidden lg:inline text-4xl text-zinc-700 font-medium lg:pb-3">
+              Complete the course
+            </p>
             <p>In three simple modules, learn:</p>
             <p>
               <Logo_fixer
@@ -122,16 +128,16 @@ export default function Home() {
           <p className="text-2xl text-zinc-700 font-medium lg:text-5xl">
             Claim NEAR certificate
           </p>
-          <p className="flex flex-col items-center">
-            <span>Upon course completion, receive the NEAR</span>
-            <span>dev 101 certificate as an NFT on your NEAR</span>
-            <span>wallet.</span>
+          <p className="text-center mx-8 lg:mx-96 lg:text-xl lg:mt-1">
+            Upon course completion, receive the NEAR
+            dev 101 certificate as an NFT on your NEAR
+            wallet.
           </p>
         </div>
       </div>
       {/* certificate of completion*/}
       <div className="flex flex-col items-center pt-8 pb-44">
-        <img src="/Images/certificate-of-completion.png" className="w-82" />
+        <img src="/Images/certificate-of-completion.png" className="w-82 lg:w-3/6 lg:pt-16" />
       </div>
       {/* last Image_fixer used and button*/}
       <div className="space-y-6">
@@ -163,7 +169,6 @@ export default function Home() {
 
       <div className="flex flex-col items-center pt-28 space-y-8 text-secondary pb-12 w-full">
         {/* links_logos */}
-        
         <div className="w-full flex justify-between px-8">
           <Link href="">
             <img src="/Images/twitter.svg" />
@@ -202,7 +207,6 @@ export default function Home() {
           <span>and Slovenia</span>
         </p>
       </div>
-     
     </div>
   );
 }
