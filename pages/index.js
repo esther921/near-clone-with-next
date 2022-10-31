@@ -20,7 +20,8 @@ export default function Home() {
               
 
               <p className="pt-1 lg:hidden">
-                <img className="pl-2 h-8" src="/Images/visual-logo.svg" />
+                <Link href={"/dacade"}><img className="pl-2 h-8" src="/Images/visual-logo.svg" /></Link>
+                
               </p>
             </picture>
             <p className="hidden lg:inline lg:text-lg lg:font-bold lg:text-zinc-900">
@@ -29,9 +30,10 @@ export default function Home() {
           </div>
 
           <div className="lg:flex lg:gap-20">
-            <p className="hidden lg:inline">Start the Course</p>
+            <p className="hidden lg:inline"><Link href={"/course"}>Start the Course</Link></p>
             <button className="rounded-3xl text-lg bg-zinc-700 text-white pb-2 pt-1 px-6 lg:font-medium">
-              Create wallet
+            <Link href={"/wallet"}>Create wallet</Link>
+              
             </button>
           </div>
         </div>
@@ -72,6 +74,7 @@ export default function Home() {
             <span>learning easy.</span>
           </div>
           <div className="flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:gap-0 lg:pt-28">
+           
             <Image_fixer
               src="/Images/visual-big-blue-green.png"
               text="Open NEAR wallet"
@@ -87,7 +90,7 @@ export default function Home() {
 
               <Link
                 className="flex w-full justify-center lg:justify-start lg:mt-8"
-                href=""
+                href="/wallet"
               >
                 <button className="rounded-3xl mt-7 border border-zinc-900 py-2 px-8 mb-12 lg:text-zinc-900 lg:mt-0">
                   Create wallet
@@ -147,7 +150,7 @@ export default function Home() {
         />
         <div className="flex flex-col items-center">
           <button className="rounded-3xl border border-gray-300 py-2 px-6 mb-12">
-            Start the course
+          <Link href={"/course"}>Start the course</Link>
           </button>
         </div>
       </div>
